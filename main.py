@@ -31,7 +31,7 @@ def hello(message):
 
 #write text in txt
 def write_file(string):
-    with codecs.open("txt_store/customer_doc.txt", "a", "utf-8") as stream:   # or utf-8
+    with codecs.open("SMMOperatorInterFace/bin/Debug/net6.0-windows/customer_input.txt", "a", "utf-8") as stream:   # or utf-8
         stream.write(string)
 
 #Prepare for voice
@@ -48,8 +48,8 @@ def voice_processing(message):
         bot.send_message(message.chat.id, "#от_заказчика\n"+ text_result )
         #print("Go to prepare for searching")
         #find_topics.prepare_data_for_searching(text_result)
-        write_file("------------------------------------\n"
-        + text_result+'\n')
+        write_file("\n\n"
+        + text_result)
 
     else:
         print('text!')
