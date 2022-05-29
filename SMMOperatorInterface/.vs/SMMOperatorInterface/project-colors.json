@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "eb6e1cc0-4937-4957-aea0-425747acdc15": {
+      "ProjectGuid": "eb6e1cc0-4937-4957-aea0-425747acdc15",
+      "DisplayName": "SMMOperatorInterface",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
