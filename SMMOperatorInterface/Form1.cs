@@ -32,6 +32,11 @@ namespace SMMOperatorInterface {
                         news.HashTag = line;
                     }
                 }
+                if (reader.EndOfStream) {
+                    if (news != null) {
+                        ListNews.Add(news);
+                    }
+                }
             }
             checkedListBox1.Items.AddRange(ListNews.ToArray());
         }
@@ -54,8 +59,13 @@ namespace SMMOperatorInterface {
                         news.Title = line;
                     }
                 }
+                if (reader.EndOfStream) {
+                    if (news != null) {
+                        ListCustomer.Add(news);
+                    }
+                }
             }
-            checkedListBox2.Items.AddRange(ListNews.ToArray());
+            checkedListBox2.Items.AddRange(ListCustomer.ToArray());
         }
 
         private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e) {

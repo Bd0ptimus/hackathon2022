@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -121,9 +122,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(0, 207);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(426, 21);
+            this.label1.Size = new System.Drawing.Size(331, 21);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Воспользуйтесь сервисом для копирайтинга: http://copy.ai";
+            this.label1.Text = "Воспользуйтесь сервисом для копирайтинга:";
             // 
             // groupBox1
             // 
@@ -145,11 +146,23 @@
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel1.Location = new System.Drawing.Point(327, 207);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(101, 21);
+            this.linkLabel1.TabIndex = 4;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "http://copy.ai";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(431, 450);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl);
@@ -178,5 +191,6 @@
         private RichTextBox richTextBox1;
         private TabPage tabPage3;
         private CheckedListBox checkedListBox2;
+        private LinkLabel linkLabel1;
     }
 }
