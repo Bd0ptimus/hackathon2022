@@ -1,0 +1,17 @@
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\bin\Debug\net6.0-windows\SMMOperatorInterface.exe
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\bin\Debug\net6.0-windows\SMMOperatorInterface.deps.json
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\bin\Debug\net6.0-windows\SMMOperatorInterface.runtimeconfig.json
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\bin\Debug\net6.0-windows\SMMOperatorInterface.dll
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\bin\Debug\net6.0-windows\SMMOperatorInterface.pdb
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\obj\Debug\net6.0-windows\SMMOperatorInterface.csproj.AssemblyReference.cache
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\obj\Debug\net6.0-windows\SMMOperatorInterface.Form1.resources
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\obj\Debug\net6.0-windows\SMMOperatorInterface.csproj.GenerateResource.cache
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\obj\Debug\net6.0-windows\SMMOperatorInterface.GeneratedMSBuildEditorConfig.editorconfig
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\obj\Debug\net6.0-windows\SMMOperatorInterface.AssemblyInfoInputs.cache
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\obj\Debug\net6.0-windows\SMMOperatorInterface.AssemblyInfo.cs
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\obj\Debug\net6.0-windows\SMMOperatorInterface.csproj.CoreCompileInputs.cache
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\obj\Debug\net6.0-windows\SMMOperatorInterface.dll
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\obj\Debug\net6.0-windows\refint\SMMOperatorInterface.dll
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\obj\Debug\net6.0-windows\SMMOperatorInterface.pdb
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\obj\Debug\net6.0-windows\SMMOperatorInterface.genruntimeconfig.cache
+G:\GosPlan\Arbeiten\Ausfuhrung\hackaton2022\SMMOperatorInterface\obj\Debug\net6.0-windows\ref\SMMOperatorInterface.dll
