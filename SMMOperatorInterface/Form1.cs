@@ -1,4 +1,4 @@
-namespace SMMOperatorInterface {
+Ôªønamespace SMMOperatorInterface {
     public partial class Form1 : Form {
         List<News> ListNews = new List<News>();
         List<News> ListCustomer = new List<News>();
@@ -18,7 +18,7 @@ namespace SMMOperatorInterface {
                 while ((line = reader.ReadLine()) != null) {
                     if (line == " ") {
                         flag = 0;
-                        if (news != null) {
+                        if (news != null && news.Title != "") {
                             ListNews.Add(news);
                             news = new News();
                         }
@@ -33,10 +33,11 @@ namespace SMMOperatorInterface {
                     }
                 }
                 if (reader.EndOfStream) {
-                    if (news != null) {
+                    if (news != null && news.Title != "") {
                         ListNews.Add(news);
                     }
                 }
+                reader.Close();
             }
             checkedListBox1.Items.AddRange(ListNews.ToArray());
         }
@@ -44,16 +45,16 @@ namespace SMMOperatorInterface {
         private void GetCustomerInfo(string path) {
             using (StreamReader reader = new StreamReader(path)) {
                 string? line;
-                int flag = 0;
+                int flag = 0;   
                 News news = new News() {
-                    HashTag = "#ÓÚ_Á‡Í‡Á˜ËÍ‡"
+                    HashTag = "#–æ—Ç_–∑–∞–∫–∞–∑—á–∏–∫–∞"
                 };
                 while ((line = reader.ReadLine()) != null) {
-                    if (line == " ") {
-                        if (news != null) {
+                    if (line == "") {
+                        if (news != null && news.Title != "") {
                             ListCustomer.Add(news);
                             news = new News {
-                                HashTag = "#ÓÚ_Á‡Í‡Á˜ËÍ‡"
+                                HashTag = "#–æ—Ç_–∑–∞–∫–∞–∑—á–∏–∫–∞"
                             };
                         }
                     } else {
@@ -62,10 +63,11 @@ namespace SMMOperatorInterface {
                     }
                 }
                 if (reader.EndOfStream) {
-                    if (news != null) {
+                    if (news != null && news.Title != "") {
                         ListCustomer.Add(news);
                     }
                 }
+                reader.Close();
             }
             checkedListBox2.Items.AddRange(ListCustomer.ToArray());
         }
@@ -95,18 +97,34 @@ namespace SMMOperatorInterface {
         }
 
         private void fileSystemWatcher1_Changed(object sender, FileSystemEventArgs e) {
+            if (e.FullPath.Contains("output.txt")) return;
             ListCustomer.Clear();
             ListNews.Clear();
             checkedListBox1.Items.Clear();
             checkedListBox2.Items.Clear();
+            using (StreamWriter sw = new StreamWriter("output.txt")) {
+                sw.WriteLine(rtbPublic.Text.Trim());
+                sw.Close();
+            }
             rtbPublic.Text = "";
             GetCustomerInfo("customer_input.txt");
             GetNews("news_input.txt");
+            using (StreamReader reader = new StreamReader("output.txt")) {
+                string? line;
+                while ((line = reader.ReadLine()) != null) {
+                    rtbPublic.Text += line;
+                }
+                reader.Close();
+            }
             this.Refresh();
         }
 
         private void button1_Click(object sender, EventArgs e) {
             System.Diagnostics.Process.Start("python", "getlink.py");
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e) {
+
         }
     }
 

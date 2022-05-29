@@ -3,14 +3,15 @@ from bs4 import BeautifulSoup as BS
 from selenium import webdriver
 import os 
 import random
+import codecs
 
 
 check=0
 while (check==0):
     #initialization
-    list={1:"Технологические стандарты",2:"Точка кипения",3:"Наука",4:"FutureSkills",5:"НТИ",6:"Технологии",7:"Практики будущего"}
+    list={1:"Технологические ",2:"Точка кипения",3:"Наука",4:"FutureSkills",5:"НТИ",6:"Технологии",7:"Практики будущего"}
     i = random.randint(1,7)
-    search = list[i]
+    search = "NeuroNET"
 
     #get value
     driver = webdriver.Chrome(os.getcwd() + '/chromedriver.exe')
@@ -20,14 +21,13 @@ while (check==0):
     soup = BS(html, "html.parser")
 
     #output the link
-    with open('SMMOperatorInterFace/bin/Debug/net6.0-windows/news_input.txt','a') as f:#write file
+    with codecs.open("news_input.txt", "w", "utf-8") as stream:   # or utf-8
         for el in soup.select("#news > .rsearch > .rs-link"): 
             #text = el.select("a")
             check+=1
             href_tag = el.find(href = True)
-            f.write(href_tag.text + '\n')
-            f.write(href_tag['href'] + '\n')
-            f.write("#"+ search.replace(" ", "_").lower() + '\n')
-            f.write('\n')
+                #print(href_tag.text)
+            stream.write(href_tag.text+'\n'+href_tag['href'] +'\n'+"#"+ search.replace(" ", "_").lower() +'\n \n')
+        stream.close()
 
-r = input()
+            

@@ -61,11 +61,11 @@
             // 
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.checkedListBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 30);
+            this.tabPage1.Location = new System.Drawing.Point(4, 37);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(423, 256);
+            this.tabPage1.Size = new System.Drawing.Size(423, 249);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Лента новостей";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -73,7 +73,7 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.Location = new System.Drawing.Point(4, 210);
+            this.button1.Location = new System.Drawing.Point(4, 203);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(415, 42);
             this.button1.TabIndex = 1;
@@ -88,18 +88,19 @@
             this.checkedListBox1.Location = new System.Drawing.Point(4, 4);
             this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(415, 248);
+            this.checkedListBox1.Size = new System.Drawing.Size(415, 241);
             this.checkedListBox1.TabIndex = 0;
             this.checkedListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox1_ItemCheck);
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.checkedListBox2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(423, 262);
+            this.tabPage3.Size = new System.Drawing.Size(423, 257);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "От заказчика";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -111,18 +112,18 @@
             this.checkedListBox2.Location = new System.Drawing.Point(4, 4);
             this.checkedListBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(415, 254);
+            this.checkedListBox2.Size = new System.Drawing.Size(415, 249);
             this.checkedListBox2.TabIndex = 1;
             this.checkedListBox2.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox1_ItemCheck);
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.rtbPublic);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Location = new System.Drawing.Point(4, 37);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(423, 262);
+            this.tabPage2.Size = new System.Drawing.Size(423, 249);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Для публикации";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -133,7 +134,7 @@
             this.rtbPublic.Location = new System.Drawing.Point(4, 4);
             this.rtbPublic.Margin = new System.Windows.Forms.Padding(4);
             this.rtbPublic.Name = "rtbPublic";
-            this.rtbPublic.Size = new System.Drawing.Size(415, 254);
+            this.rtbPublic.Size = new System.Drawing.Size(415, 241);
             this.rtbPublic.TabIndex = 0;
             this.rtbPublic.Text = "";
             // 
@@ -145,7 +146,7 @@
             this.label1.Location = new System.Drawing.Point(0, 290);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(331, 21);
+            this.label1.Size = new System.Drawing.Size(427, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "Воспользуйтесь сервисом для копирайтинга:";
             // 
@@ -165,10 +166,10 @@
             // richTextBox1
             // 
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(4, 26);
+            this.richTextBox1.Location = new System.Drawing.Point(4, 31);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(423, 277);
+            this.richTextBox1.Size = new System.Drawing.Size(423, 272);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
@@ -177,10 +178,10 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.linkLabel1.Location = new System.Drawing.Point(330, 290);
+            this.linkLabel1.Location = new System.Drawing.Point(300, 290);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(101, 21);
+            this.linkLabel1.Size = new System.Drawing.Size(131, 28);
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "http://copy.ai";
@@ -188,14 +189,13 @@
             // fileSystemWatcher1
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
-            this.fileSystemWatcher1.Path = "G:\\GosPlan\\Arbeiten\\Ausfuhrung\\hackaton2022\\SMMOperatorInterface\\bin\\Debug\\net6.0" +
-    "-windows";
+            this.fileSystemWatcher1.Path = "D:\\GitHub\\hackaton2022\\SMMOperatorInterface\\bin\\Debug\\net6.0-windows";
             this.fileSystemWatcher1.SynchronizingObject = this;
             this.fileSystemWatcher1.Changed += new System.IO.FileSystemEventHandler(this.fileSystemWatcher1_Changed);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(431, 630);
             this.Controls.Add(this.linkLabel1);
