@@ -93,6 +93,21 @@ namespace SMMOperatorInterface {
                 rtbPublic.Text += news1.Title + "\n" + (news1.Href != "" ? news1.Href + "\n" : "") + news1.HashTag + "\n\n";
             }
         }
+
+        private void fileSystemWatcher1_Changed(object sender, FileSystemEventArgs e) {
+            ListCustomer.Clear();
+            ListNews.Clear();
+            checkedListBox1.Items.Clear();
+            checkedListBox2.Items.Clear();
+            rtbPublic.Text = "";
+            GetCustomerInfo("customer_input.txt");
+            GetNews("news_input.txt");
+            this.Refresh();
+        }
+
+        private void button1_Click(object sender, EventArgs e) {
+            System.Diagnostics.Process.Start("python", "getlink.py");
+        }
     }
 
     public class News {

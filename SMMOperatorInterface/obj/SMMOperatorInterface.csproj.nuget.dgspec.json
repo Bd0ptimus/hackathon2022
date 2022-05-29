@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\hackaton2022\\SMMOperatorInterface\\SMMOperatorInterface.csproj": {}
+    "G:\\GosPlan\\Arbeiten\\Ausfuhrung\\hackaton2022\\SMMOperatorInterface\\SMMOperatorInterface.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\hackaton2022\\SMMOperatorInterface\\SMMOperatorInterface.csproj": {
+    "G:\\GosPlan\\Arbeiten\\Ausfuhrung\\hackaton2022\\SMMOperatorInterface\\SMMOperatorInterface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\hackaton2022\\SMMOperatorInterface\\SMMOperatorInterface.csproj",
+        "projectUniqueName": "G:\\GosPlan\\Arbeiten\\Ausfuhrung\\hackaton2022\\SMMOperatorInterface\\SMMOperatorInterface.csproj",
         "projectName": "SMMOperatorInterface",
-        "projectPath": "D:\\GitHub\\hackaton2022\\SMMOperatorInterface\\SMMOperatorInterface.csproj",
-        "packagesPath": "C:\\Users\\Bui Zung\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\hackaton2022\\SMMOperatorInterface\\obj\\",
+        "projectPath": "G:\\GosPlan\\Arbeiten\\Ausfuhrung\\hackaton2022\\SMMOperatorInterface\\SMMOperatorInterface.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "G:\\GosPlan\\Arbeiten\\Ausfuhrung\\hackaton2022\\SMMOperatorInterface\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "G:\\Microsoft Visual Studio\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bui Zung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -61,7 +61,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

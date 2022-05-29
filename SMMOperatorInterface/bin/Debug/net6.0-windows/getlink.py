@@ -29,3 +29,5 @@ while (check==0):
             f.write(href_tag['href'] + '\n')
             f.write("#"+ search.replace(" ", "_").lower() + '\n')
             f.write('\n')
+
+r = input()
