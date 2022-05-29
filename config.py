@@ -1,4 +1,4 @@
-
+#file config
 class Config :
     TELEGRAM_TOKEN="5490985665:AAEU_lgKJsaxLn0c8EssQZ0bsWjTQz3dtdc"
     AWS_ACCESS_KEY = "nQCZlgvbvwuSr7C99Uxx"
