@@ -45,7 +45,9 @@ namespace SMMOperatorInterface {
             using (StreamReader reader = new StreamReader(path)) {
                 string? line;
                 int flag = 0;
-                News news = new News();
+                News news = new News() {
+                    HashTag = "#от_заказчика"
+                };
                 while ((line = reader.ReadLine()) != null) {
                     if (line == " ") {
                         if (news != null) {
@@ -72,8 +74,13 @@ namespace SMMOperatorInterface {
             rtbPublic.Clear();
             CheckedListBox checkedListBox = (CheckedListBox)sender;
             News news1;
-            for (int i = 0; i < checkedListBox.CheckedItems.Count; i++) {
-                news1 = checkedListBox.CheckedItems[i] as News;
+            for (int i = 0; i < checkedListBox1.CheckedItems.Count; i++) {
+                news1 = checkedListBox1.CheckedItems[i] as News;
+                if (news1 == null) continue;
+                rtbPublic.Text += news1.Title + "\n" + (news1.Href != "" ? news1.Href + "\n" : "") + news1.HashTag + "\n\n";
+            }
+            for (int i = 0; i < checkedListBox2.CheckedItems.Count; i++) {
+                news1 = checkedListBox2.CheckedItems[i] as News;
                 if (news1 == null) continue;
                 rtbPublic.Text += news1.Title + "\n" + (news1.Href != "" ? news1.Href + "\n" : "") + news1.HashTag + "\n\n";
             }
